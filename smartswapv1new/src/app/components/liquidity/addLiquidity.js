@@ -73,9 +73,9 @@ const AddLiquidity = ({
   >
     {isNewUser ? <ApproveBox popupText={popupText} /> : <div />}
     <Flex justifyContent="space-between" alignItems="center" px={4}>
-      <ArrowLeft cursor="pointer" onClick={() => back('INDEX')} />
+      <img src={ArrowLeft} cursor="pointer" onClick={() => back('INDEX')} />
       <Text color="gray.200">Add Liquidity</Text>
-      <Question />
+      <img src={Question}/>
     </Flex>
 
     <LiquidityFromBox
@@ -88,7 +88,7 @@ const AddLiquidity = ({
       setFromSelectedToken={setFromSelectedToken}
     />
     <Flex justifyContent="center" my={3}>
-      <Plus />
+      <img src={Plus} />
     </Flex>
     <To
       label="input"
@@ -419,7 +419,7 @@ const AddLiquidity = ({
             mb={4}
           >
             <Spinner />
-            <BreakdownBg />
+            <img src={BreakdownBg} />
             <Text fontSize="18px" fontWeight="normal">
               Waiting for Blockchain Confirmation
             </Text>

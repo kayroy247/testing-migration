@@ -49,7 +49,7 @@ const Nav = () => {
               mb={2}
               cursor="pointer"
             >
-              <Telegram />
+              <img src={Telegram}/>
               <Text ml={4}>
                 <Link href="https://www.t.me/rigelprotocol" isExternal>
                   Telegram
@@ -71,7 +71,7 @@ const Nav = () => {
               mb={2}
               cursor="pointer"
             >
-              <Twitter />
+              <img src={Twitter} />
               <Text ml={4}>
                 <Link href="https://twitter.com/rigelprotocol" isExternal>
                   Twitter
@@ -94,7 +94,7 @@ const Nav = () => {
               mb={2}
               cursor="pointer"
             >
-              <LinkedIn />
+              <img src={LinkedIn} />
               <Text ml={4}>
                 <Link href="https://www.linkedin.com/company/rigelprotocol/about/" isExternal>
                   LinkedIn
@@ -116,7 +116,7 @@ const Nav = () => {
               mb={2}
               cursor="pointer"
             >
-              <Github />
+              <img src={Github} />
               <Text ml={4}>
                 <Link href="https://github.com/rigelprotocol" isExternal>
                   Github
@@ -138,7 +138,7 @@ const Nav = () => {
               mb={2}
               cursor="pointer"
             >
-              <Medium />
+              <img src={Medium} />
               <Text ml={4}>
                 <Link href="https://medium.com/rigelprotocol" isExternal>
                   Medium

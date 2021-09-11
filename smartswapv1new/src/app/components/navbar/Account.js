@@ -55,7 +55,7 @@ const Account = ({ wallet, wallet_props }) => {
             -6,
             address.length,
           )}`}</Text>
-          <CurrentImage />
+          <img src={CurrentImage} />
         </Button>
       </Flex>
 
@@ -104,7 +104,7 @@ const Account = ({ wallet, wallet_props }) => {
             </Flex>
 
             <Flex color="#fff" alignItems="center" rounded="md">
-              <CurrentImage />
+              <img src={CurrentImage} />
               <Text color="gray.400" fontSize="13px" ml={2}>
                 {address}
               </Text>
@@ -118,7 +118,7 @@ const Account = ({ wallet, wallet_props }) => {
               mb={3}
             >
               <Flex alignItems="center">
-                <CopyImage />
+                <img src={CopyImage} />
                 <Text
                   color="gray.400"
                   cursor="pointer"
@@ -131,7 +131,7 @@ const Account = ({ wallet, wallet_props }) => {
               </Flex>
 
               <Flex alignItems="center">
-                <EditImage />
+                <img src={EditImage} />
                 <Text color="gray.400" fontSize="13px" ml={2}>
                   <a
                     href={`https://etherscan.io/address/${address}`}

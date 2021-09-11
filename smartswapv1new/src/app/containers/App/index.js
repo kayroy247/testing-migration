@@ -62,7 +62,7 @@
    useEffect(() => {
      if (window.ethereum) {
        checkchain();
-       const obj = window.ethereum.on('chainChanged', chainId => {
+       const obj = window.ethereum?.on('chainChanged', chainId => {
          console.log(chainId);
          window.location.reload();
        });
@@ -74,7 +74,7 @@
    }, [wallet]);
  
    const checkchain = async () => {
-     const chainID = await window.ethereum.request({
+     const chainID = await window.ethereum?.request({
        method: 'eth_chainId',
      });
      props.updateChainId(chainID);

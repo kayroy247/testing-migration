@@ -44,7 +44,7 @@ const Loading = ({ connectingWallet }) => (
           <Text color="white">Metamask</Text>
           <Text color="white">Easy-to-use browser extension.</Text>
         </div>
-        <MetaMaskImage />
+        <img src={MetaMaskImage} />
       </Flex>
     </ModalBody>
   </>

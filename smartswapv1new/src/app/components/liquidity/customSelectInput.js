@@ -64,9 +64,9 @@ const CustomSelectInput = ({
         _hover={{ background: '#72cfe4', color: '#29235E' }}
         rightIcon={<ChevronDownIcon />}
       >
-        {defaultSelectText.symbol === "BNB" && <BUSDImage />}
-        {defaultSelectText.symbol === "ETH" && <ETHImage />}
-        {defaultSelectText.symbol === "RGP" && <RGPImage />}
+        {defaultSelectText.symbol === "BNB" && <img src={BUSDImage} />}
+        {defaultSelectText.symbol === "ETH" && <img src={ETHImage} />}
+        {defaultSelectText.symbol === "RGP" && <img src={RGPImage} />}
         <Text ml={4}>{defaultSelectText.symbol}</Text>
       </Button>
       <Modal isOpen={isOpen} onClose={onClose} isCentered>
@@ -114,7 +114,7 @@ const CustomSelectInput = ({
               }}
             >
               <Flex alignItems="center">
-                <RGPImage />
+                <img src={RGPImage} />
                 <Text fontSize="md" fontWeight="regular" color="#fff" ml={2}>
                   {selectingToken[1].symbol}
                 </Text>
@@ -136,7 +136,7 @@ const CustomSelectInput = ({
               }}
             >
               <Flex alignItems="center">
-                <BUSDImage />
+                <img src={BUSDImage} />
                 <Text fontSize="md" fontWeight="regular" color="#fff" ml={2}>
                   {selectingToken[2].symbol}
                 </Text>
@@ -158,7 +158,7 @@ const CustomSelectInput = ({
               }}
             >
               <Flex alignItems="center">
-                <ETHImage />
+                <img src={ETHImage} />
                 <Text fontSize="md" fontWeight="regular" color="#fff" ml={2}>
                   {selectingToken[3].symbol}
                 </Text>

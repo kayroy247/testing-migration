@@ -29,7 +29,7 @@ const Options = ({ connectWallet }) => (
         <Text color="white" _hover={{ color: '#40BAD5' }}>
           Metamask
         </Text>
-        <MetaMaskImage />
+        <img src={MetaMaskImage}/>
       </Flex>
       <Flex
         color="#fff"
@@ -48,7 +48,7 @@ const Options = ({ connectWallet }) => (
         <Text color="white" _hover={{ color: '#40BAD5' }}>
           Trust Wallet
         </Text>
-        <TrustWalletImage />
+        <img src={TrustWalletImage}/>
       </Flex>
     </ModalBody>
   </>

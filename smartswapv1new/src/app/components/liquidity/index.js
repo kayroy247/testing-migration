@@ -51,7 +51,7 @@ const Index = ({
         <Text color="gray.200" fontSize="md">
           Your liquidity
         </Text>
-        <Question />
+        <img src={Question}/>
       </Flex>
       {liquidityLoading ? <Flex
         color="#fff"

@@ -64,7 +64,7 @@ const RGP = ({ wallet_props }) => {
           </ModalHeader>
           <ModalBody mt={4}>
             <Flex w="100%" position="absolute" opacity="0.3">
-              <BreakdownBg />
+              <img src={BreakdownBg}/>
             </Flex>
             <Flex
               mt="25px"
@@ -76,7 +76,7 @@ const RGP = ({ wallet_props }) => {
               px={4}
               rounded="md"
             >
-              <RGPImage />
+              <img src={RGPImage} />
               <Text zIndex="10" color="#fff" fontSize="4xl" fontWeight="bold">
                 {wallet_props} RGP
               </Text>

@@ -65,15 +65,15 @@ export function FarmingPage(props) {
 
         const filter = rigelEarned.filters.Transfer(SMART_SWAP.masterChef, wallet.address, null);
         rigelEarned.on(filter, (sender, receiver, amount) => {
-          toast({
-            title: "RGP Harvest Successful",
-            description: `${ethers.utils.formatEther(amount)} RGP has been transfered to your address`,
-            status: "success",
-            position: "top-right",
-            duration: 9000,
-            isClosable: true,
+          // toast({
+          //   title: "RGP Harvest Successful",
+          //   description: `${ethers.utils.formatEther(amount)} RGP has been transfered to your address`,
+          //   status: "success",
+          //   position: "top-right",
+          //   duration: 9000,
+          //   isClosable: true,
 
-          })
+          // })
         })
       }
       return () => {
@@ -227,17 +227,17 @@ export function FarmingPage(props) {
       ]);
     } catch (error) {
       console.log(error);
-      if (!toast.isActive(id)) {
-        toast({
-          id,
-          title: "Unable to load data",
-          description: "Ensure your wallet is on BSC network and reload page",
-          status: "error",
-          duration: 9000,
-          isClosable: true,
-          position: "bottom-right",
-        })
-      }
+      // if (!toast.isActive(id)) {
+      //   toast({
+      //     id,
+      //     title: "Unable to load data",
+      //     description: "Ensure your wallet is on BSC network and reload page",
+      //     status: "error",
+      //     duration: 9000,
+      //     isClosable: true,
+      //     position: "bottom-right",
+      //   })
+      // }
     } finally {
       props.farmDataLoading(false)
     }
