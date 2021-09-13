@@ -2,6 +2,7 @@
   "name": "smartswapv1new",
   "version": "0.1.0",
   "private": true,
+  "homepage": ".",
   "dependencies": {
     "@babel/polyfill": "7.4.3",
     "@chakra-ui/icons": "^1.0.5",
